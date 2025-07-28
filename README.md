@@ -1,69 +1,36 @@
-Uber Fares Analysis - Power BI Dashboard
-Project Overview
-This project analyzes Uber trip data to uncover fare patterns, peak demand periods, and operational insights using Power BI. The interactive dashboard visualizes key metrics to optimize pricing strategies and resource allocation.
+Uber Fares Data Analysis - Power BI Dashboard
 
+This project presents an interactive dashboard analyzing Uber Fares data using Python and Power BI. The goal is to uncover insights into fare amounts, ride patterns, time-based trends, and geographic ride distribution.
+
+Project Structure
+
+uber_cleaned_features.csv — Cleaned and enhanced dataset used in Power BI
+Uber_Fares_Analysis.pbix — Power BI dashboard file
+screenshots/ — Visuals showing steps and final dashboard
+README.md — Project overview (this file)
 Tools Used
-Python (Pandas, Matplotlib/Seaborn) for data cleaning & EDA.
 
-Power BI for interactive dashboards.
+Python (Pandas, Geopy) — for data cleaning and feature engineering
+Power BI Desktop — for data visualization and dashboard creation
+Key Features of the Dashboard
 
-GitHub for version control.
+Fare distribution (histogram and box plot)
+Average fare by hour, weekday, and month
+Ride frequency trends over time
+Peak vs. off-peak ride patterns
+Geographic ride mapping using lat/lon
+Interactive filters (slicers) for deeper exploration
+Insights
 
-Key Insights
-Peak Hours: Fares surge by 20% during 7–9 AM and 5–7 PM.
+Most rides occur during peak commute hours.
+Average fares vary by time of day and day of the week.
+Geographic clusters show urban hotspots for pickups and drop-offs.
+Author
 
-Distance-Fare Correlation: Strong linear relationship (R² = 0.78).
+IRAKOZE Timothee
+email: timoirakoze@gmail.com
 
-Weekend Demand: 15% more rides on Fridays/Saturdays.
+AUCA | INSY 8413 – Introduction to Big Data Analytics
+Instructor: Eric Maniraguha
+ eric.maniraguha@auca.ac.rw
 
-How to Use This Project
-1. Data Preparation
-Run the Jupyter Notebook (notebooks/uber_data_cleaning.ipynb) to:
-
-Clean missing values.
-
-Add features like peak_hour and day_of_week.
-
-Export cleaned data to data/uber_cleaned.csv.
-
-2. Power BI Dashboard
-Open powerbi/uber_analysis.pbix in Power BI Desktop.
-
-Filters: Adjust date ranges, days, or peak hours.
-
-Interactivity: Click visuals to cross-filter (e.g., select a day to update all charts).
-
-3. Customize
-Edit DAX measures in Power BI for new metrics.
-
-Replace uber_raw.csv with updated data (ensure column consistency).
-
- Dashboard Preview
-https://i.imgur.com/XYZ123.png
-(Replace with your actual screenshot link)
-
- Report Summary
-Objective: Analyze fare trends to optimize Uber’s pricing strategy.
-
-Methodology: EDA in Python → Visualization in Power BI.
-
-Recommendations:
-
-Implement dynamic pricing during peak hours.
-
-Allocate more drivers to high-demand areas.
-
-Contact
-For questions or collaborations:
-
-Email: timoirakoze@gmail.com.com
-
-License: MIT
-Dataset Source: Kaggle Uber Fares Dataset
-
-Key Files to Highlight
-File	Purpose
-uber_cleaned.csv	Analysis-ready data
-uber_analysis.pbix	Interactive dashboard
-uber_data_cleaning.ipynb	Data cleaning code
-This README ensures reproducibility and clarity for stakeholders. Customize links, insights, and contact details as needed!
